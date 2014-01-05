@@ -1,4 +1,4 @@
 HelloBeacon
 ===========
 
-iBeacon sample
+iBeacon で入退室のログをとってみるテスト
