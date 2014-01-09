@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "入退室ログ";
+CFBundleDisplayName = "入退室ログ";

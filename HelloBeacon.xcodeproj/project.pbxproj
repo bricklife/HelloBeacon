@@ -60,6 +60,7 @@
 		CBB425AA1879E381006E9EB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBB425AC1879E381006E9EB4 /* HelloBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloBeaconTests.m; sourceTree = "<group>"; };
 		CBB425B61879E996006E9EB4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CBD6E0F6187E63CC00EDC546 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +232,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = CBB4256C1879E381006E9EB4;
 			productRefGroup = CBB425761879E381006E9EB4 /* Products */;
@@ -299,6 +301,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CBB425841879E381006E9EB4 /* en */,
+				CBD6E0F6187E63CC00EDC546 /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				CBB425B21879E381006E9EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBB425B31879E381006E9EB4 /* Build configuration list for PBXNativeTarget "HelloBeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +493,7 @@
 				CBB425B51879E381006E9EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
