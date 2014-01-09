@@ -30,6 +30,11 @@
     [super viewDidLoad];
 
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+#if TARGET_IPHONE_SIMULATOR
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
+    self.navigationItem.rightBarButtonItem = addButton;
+#endif
 
     self.formatter = [NSDateFormatter new];
     [self.formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
@@ -88,6 +93,13 @@
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+}
+
+- (void)insertNewObject:(id)sender
+{
+    static BOOL enter = YES;
+    [self insertNewObjectWithEnter:enter];
+    enter = !enter;
 }
 
 - (void)sendNotification:(NSString*)message
