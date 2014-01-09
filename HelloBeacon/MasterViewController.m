@@ -37,7 +37,7 @@
 #endif
 
     self.formatter = [NSDateFormatter new];
-    [self.formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    [self.formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     
     if ([CLLocationManager isMonitoringAvailableForClass:[CLBeaconRegion class]]) {
         self.locationManager = [CLLocationManager new];
