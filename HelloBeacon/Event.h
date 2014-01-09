@@ -15,4 +15,6 @@
 @property (nonatomic, retain) NSNumber * enter;
 @property (nonatomic, retain) NSDate * timeStamp;
 
+- (NSString *)dateString;
+
 @end

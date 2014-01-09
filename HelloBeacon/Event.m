@@ -14,4 +14,12 @@
 @dynamic enter;
 @dynamic timeStamp;
 
+- (NSString *)dateString
+{
+    NSDateFormatter *formatter = [NSDateFormatter new];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    
+    return [formatter stringFromDate:self.timeStamp];
+}
+
 @end
