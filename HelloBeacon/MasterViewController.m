@@ -8,6 +8,8 @@
 
 #import "MasterViewController.h"
 
+#import "Event.h"
+
 @interface MasterViewController () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) NSDateFormatter *formatter;
@@ -63,10 +65,10 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Event *event = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    BOOL enter = [[object valueForKey:@"enter"] boolValue];
-    NSDate *timeStamp = [object valueForKey:@"timeStamp"];
+    BOOL enter = [event.enter boolValue];
+    NSDate *timeStamp = event.timeStamp;
     
     cell.textLabel.text = enter ? NSLocalizedString(@"入室", @"入室") : NSLocalizedString(@"退室", @"退室");
     
@@ -77,13 +79,12 @@
 {
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
     NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
+    Event *newEvent = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
     
     // If appropriate, configure the new managed object.
     // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    [newManagedObject setValue:[NSNumber numberWithBool:enter] forKey:@"enter"];
+    newEvent.timeStamp = [NSDate date];
+    newEvent.enter = @(enter);
     
     // Save the context.
     NSError *error = nil;

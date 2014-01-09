@@ -25,6 +25,7 @@
 		CBB425AB1879E381006E9EB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBB425A91879E381006E9EB4 /* InfoPlist.strings */; };
 		CBB425AD1879E381006E9EB4 /* HelloBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB425AC1879E381006E9EB4 /* HelloBeaconTests.m */; };
 		CBB425B71879E996006E9EB4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB425B61879E996006E9EB4 /* CoreLocation.framework */; };
+		CBD6E0FB187E677E00EDC546 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6E0FA187E677E00EDC546 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		CBB425AC1879E381006E9EB4 /* HelloBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloBeaconTests.m; sourceTree = "<group>"; };
 		CBB425B61879E996006E9EB4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CBD6E0F6187E63CC00EDC546 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBD6E0F9187E677E00EDC546 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		CBD6E0FA187E677E00EDC546 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				CBB425931879E381006E9EB4 /* MasterViewController.m */,
 				CBB425981879E381006E9EB4 /* Images.xcassets */,
 				CBB4258F1879E381006E9EB4 /* HelloBeacon.xcdatamodeld */,
+				CBD6E0F9187E677E00EDC546 /* Event.h */,
+				CBD6E0FA187E677E00EDC546 /* Event.m */,
 				CBB425811879E381006E9EB4 /* Supporting Files */,
 			);
 			path = HelloBeacon;
@@ -273,6 +278,7 @@
 			files = (
 				CBB425941879E381006E9EB4 /* MasterViewController.m in Sources */,
 				CBB4258B1879E381006E9EB4 /* AppDelegate.m in Sources */,
+				CBD6E0FB187E677E00EDC546 /* Event.m in Sources */,
 				CBB425871879E381006E9EB4 /* main.m in Sources */,
 				CBB425911879E381006E9EB4 /* HelloBeacon.xcdatamodeld in Sources */,
 			);
